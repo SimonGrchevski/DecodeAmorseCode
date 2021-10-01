@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 def decode_char(letter)
   alph = { '.-': 'A', '-...': 'B', '-.-.': 'C', '-..': 'D', '.': 'E',
            '..-.': 'F', '--.': 'G', '....': 'H', '..': 'I', '.---': 'J', '-.-': 'K',
