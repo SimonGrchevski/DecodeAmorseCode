@@ -16,3 +16,12 @@ def decode_word(word)
   end
   decoded_word
 end
+
+def decode(sentence)
+  decoded_sentence = ''
+  sentence.split('   ').each do |word|
+    decoded_sentence += "#{decode_word(word)} "
+  end
+  puts decoded_sentence
+end
+decode('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-. / .-. ..- -... .. . ...')
