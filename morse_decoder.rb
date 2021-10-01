@@ -10,17 +10,17 @@ def decode_char(letter)
 end
 
 def decode_word(word)
-  decoded_word = ''
+  decoded_word = +''
   word.split.each do |c|
-    decoded_word += decode_char(c)
+    decoded_word << decode_char(c)
   end
   decoded_word
 end
 
 def decode(sentence)
-  decoded_sentence = ''
+  decoded_sentence = +''
   sentence.split('   ').each do |word|
-    decoded_sentence += "#{decode_word(word)} "
+    decoded_sentence << "#{decode_word(word)} "
   end
   puts decoded_sentence
 end
